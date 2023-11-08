@@ -39,7 +39,7 @@ body {
 }
 
 .popup {
-    display: none;
+    /*display: none;*/
 }
 
 .popup_background {
@@ -114,12 +114,13 @@ body {
 
 .select-label {
     position: relative;
+    appearance: none;
 }
 
 .triangles {
     position: absolute;
     top: 7%;
-    right: 1.5%;
+    right: 3%;
     background-color: #f4f7f6;;
 }
 
@@ -129,7 +130,7 @@ body {
     border-right: 0.37em solid transparent;
     border-left: 0.37em solid transparent;
     border-bottom: 0.6em solid #b59f5b;
-    margin-bottom: 2px;
+    margin-bottom: 0.15em;
 }
 
 .triangle-bottom {
