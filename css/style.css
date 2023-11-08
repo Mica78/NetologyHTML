@@ -224,7 +224,6 @@ body {
 .top-line {
     display: flex;
     padding: 2% 12%;
-    /*width: 90.76em;*/
     margin: auto;
     position: relative;
     align-items: end;
@@ -406,7 +405,7 @@ aside {
     margin-left: auto;
     margin-top: 2%;
     font-size: 100%;
-    min-width: 250px;
+    /*min-width: 240px;*/
 }
 
 aside>h2 {
@@ -590,12 +589,14 @@ footer {
 .shop_items {
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     margin-top: 4%;
 }
 
 .shop__item {
     width: 32%;
     display: block;
+    /*margin-bottom: 0;*/
 }
 
 .shop__item:nth-child(n+2) {
@@ -750,6 +751,52 @@ footer {
         font-size: 0.7em;
     }
 
+    /*.shop_items {*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
+
+    /*.shop__item:nth-child(n) {*/
+    /*    margin-left: 0;*/
+    /*    margin-bottom: 5%;*/
+    /*}*/
+
+    /*.shop__item:nth-child(even) {*/
+    /*    margin-left: 5%;*/
+    /*}*/
+
+    /*.shop__item {*/
+    /*    width: 47%;*/
+    /*}*/
+    /*.shop__item__description {*/
+    /*    height: 35%;*/
+    /*}*/
+}
+
+@media (max-width: 1200px) and (orientation: portrait), (max-width: 640px) {
+    .trends {
+        flex-wrap: wrap;
+    }
+
+    .trend_card {
+        width: 49.6%;
+        margin-left: 0;
+    }
+
+    .trend_card:nth-child(n) {
+        margin-left: 0;
+    }
+
+    .trend_card:nth-child(even) {
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .trend_card {
+        width: 49.3%;
+    }
+
     .shop_items {
         flex-wrap: wrap;
     }
@@ -766,24 +813,8 @@ footer {
     .shop__item {
         width: 47%;
     }
-}
-
-@media (max-width: 1200px) and (orientation: portrait) {
-    .trends {
-        flex-wrap: wrap;
-    }
-
-    .trend_card {
-        width: 49.6%;
-        margin-left: 0;
-    }
-
-    .trend_card:nth-child(n) {
-        margin-left: 0;
-    }
-
-    .trend_card:nth-child(even) {
-        margin-left: 4px;
+    .shop__item__description {
+        height: 35%;
     }
 }
 
@@ -845,5 +876,13 @@ footer {
 
     .shop__item {
         width: 100%;
+    }
+
+    .shop__item:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .shop__item__description {
+        height: 20%;
     }
 }
