@@ -235,6 +235,9 @@ body {
     width: 18%;
     margin-right: auto;
 }
+.menu {
+    align-self: center;
+}
 
 .menu_item {
     color: #ffffff;
@@ -420,6 +423,8 @@ aside>h2 {
 
 .last-post__image {
     background-color: #f4f7f6;
+    /*max-height: 100%;*/
+    /*max-width: 100%;*/
 }
 
 .last-post__description {
@@ -872,7 +877,6 @@ footer {
 
     aside {
         min-width: 100%;
-    ;
     }
 
     .shop__item {
