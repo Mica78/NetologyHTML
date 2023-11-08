@@ -216,7 +216,7 @@ body {
 .banner {
     width: 100%;
     height: 100%;
-    background-image: url("/img/banner-bg.jpg");
+    background-image: url("../img/banner-bg.jpg");
     background-size: cover;
     opacity: 0.6;
     position: absolute;
@@ -731,7 +731,7 @@ footer {
     }
 
     .banner {
-        background-image: url("/img/banner-bg-tablet.jpg");
+        background-image: url("../img/banner-bg-tablet.jpg");
         background-position: bottom;
     }
 
@@ -834,11 +834,15 @@ footer {
     }
 
     .banner {
-        background-image: url("/img/banner-mobile.jpg");
+        background-image: url("../img/banner-mobile.jpg");
     }
 
     .top-line {
         flex-direction: column
+    }
+
+    .menu {
+        align-self: end;
     }
 
     .other_menu {
